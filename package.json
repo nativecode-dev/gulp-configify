@@ -3,7 +3,7 @@
   "description": "Creates a single JSON object from provided JSON files.",
   "license": "MIT",
   "main": "lib/index.js",
-  "name": "gulp-configify",
+  "name": "gulp-configly",
   "version": "1.0.0",
   "dependencies": {},
   "devDependencies": {
@@ -19,7 +19,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nativecode-dev/gulp-configify"
+    "url": "https://github.com/nativecode-dev/gulp-configly"
   },
   "scripts": {
     "build": "gulp build",
