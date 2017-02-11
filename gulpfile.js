@@ -11,4 +11,9 @@ gulp.task('build:js', () => {
     .pipe(gulp.dest($.destination.lib))
 })
 
+gulp.task('clean', () => {
+  return gulp.src($.destination.lib)
+    .pipe(plugins.clean())
+})
+
 gulp.task('default', ['build'])

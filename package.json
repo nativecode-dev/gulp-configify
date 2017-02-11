@@ -3,7 +3,7 @@
   "description": "Creates a single JSON object from provided JSON files.",
   "license": "MIT",
   "main": "lib/index.js",
-  "name": "@nativecode/chatterer",
+  "name": "gulp-configify",
   "version": "1.0.0",
   "dependencies": {},
   "devDependencies": {
@@ -14,11 +14,14 @@
     "gulp-debug": "^3.0.0",
     "gulp-load-plugins": "^1.5.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nativecode-dev/gulp-configify"
+  },
   "scripts": {
     "build": "gulp build",
     "clean": "gulp clean",
-    "prepublish": "gulp clean && gulp test",
-    "postinstall": "gulp build",
-    "test": "gulp test"
+    "prepublish": "gulp clean && gulp build",
+    "postinstall": "gulp build"
   }
 }
