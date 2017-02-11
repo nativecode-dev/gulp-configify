@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "lib/index.js",
   "name": "gulp-configly",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "dependencies": {},
   "devDependencies": {
     "babel-preset-es2015": "^6.22.0",
@@ -24,7 +24,6 @@
   "scripts": {
     "build": "gulp build",
     "clean": "gulp clean",
-    "prepublish": "gulp clean && gulp build",
-    "postinstall": "gulp build"
+    "prepublish": "gulp clean && gulp build"
   }
 }
