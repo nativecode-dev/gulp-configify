@@ -14,6 +14,9 @@
     "gulp-debug": "^3.0.0",
     "gulp-load-plugins": "^1.5.0"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/nativecode-dev/gulp-configify"
