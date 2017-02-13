@@ -11,6 +11,12 @@ describe('when using module', () => {
     expect(config.a).to.not.be.undefined
   })
 
+  it('should create properties for multiple configs', () => {
+    const config = configly(configpath, 'a.json', 'b.json')
+    expect(config.a.name).to.equal('a')
+    expect(config.b.name).to.equal('b')
+  })
+
   it('should merge two configurations', () => {
     const merged = configly(configpath, 'a.json', 'a/a.json')
     expect(merged.a.name).to.equal('a')
