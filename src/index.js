@@ -1,4 +1,5 @@
 const fs = require('fs')
+const merge = require('merge')
 const path = require('path')
 
 const readfile = (filename, config) => {
@@ -8,7 +9,11 @@ const readfile = (filename, config) => {
     const json = JSON.parse(fs.readFileSync(filename))
 
     if (config && fs.existsSync(filename)) {
-      config[name] = json
+      if (config[name]) {
+        config[name] = merge.recursive(true, config[name], json)
+      } else {
+        config[name] = json
+      }
       return config
     }
 
@@ -18,7 +23,7 @@ const readfile = (filename, config) => {
   }
 }
 
-module.exports = (basedir, ...args) => {
+const configly = (basedir, ...args) => {
   const gulpfile = path.join(basedir, 'gulpfile.json')
 
   let config = readfile(gulpfile) || {}
@@ -30,3 +35,5 @@ module.exports = (basedir, ...args) => {
 
   return config
 }
+
+module.exports = configly
