@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "lib/index.js",
   "name": "gulp-configly",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "dependencies": {
     "merge": "^1.2.0"
   },
