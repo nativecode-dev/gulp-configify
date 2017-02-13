@@ -1,6 +1,6 @@
 # gulp-configly
 
-[![TeamCity (simple build status)](https://img.shields.io/teamcity/http/teamcity.jetbrains.com/s/bt345.svg?style=flat-square)](https://build.nativecode.com/viewType.html?buildTypeId=nativecode_opensource_GulpConfigly_Continuous)
+[![TeamCity (simple build status)](https://img.shields.io/teamcity/http/teamcity.jetbrains.com/s/bt345.svg?style=flat-square&label=continuous)](https://build.nativecode.com/viewType.html?buildTypeId=nativecode_opensource_GulpConfigly_Continuous)
 
 Node module to merge multiple JSON files into a single configuration object. The module is primarily
 used to join multiple configurations, usually for `gulp`. However, it can be used without `gulp`.
