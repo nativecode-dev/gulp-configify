@@ -12,7 +12,8 @@ gulp.task('build:js', () => {
 })
 
 gulp.task('clean', () => {
-  return gulp.src($.destination.lib)
+  return gulp.src($.sources.clean)
+    .pipe(plugins.debug())
     .pipe(plugins.clean())
 })
 

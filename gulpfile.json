@@ -19,6 +19,7 @@
     }
   },
   "sources": {
+    "clean": ["lib/", "*.tgz"],
     "js": ["src/**/*.js"],
     "tests": ["tests/**/when_*.js"]
   }
